@@ -482,6 +482,7 @@ export default [
   {
     path: '*',
     name: 'error_404',
+    redirect: '/login',
     meta: {
       hideInMenu: true
     },

@@ -21,8 +21,8 @@ const turnTo = (to, access, next) => {
 
 router.beforeEach((to, from, next) => {
   console.log(to.name)
-  next();
-});
+  next()
+})
 
 // router.beforeEach((to, from, next) => {
 //   iView.LoadingBar.start()
