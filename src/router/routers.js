@@ -354,8 +354,8 @@ export default [
   //   ]
   // },
   {
-    path: '/directive123',
-    name: 'directive123',
+    path: '/directive',
+    name: 'directive',
     meta: {
       hideInBread: true
     },

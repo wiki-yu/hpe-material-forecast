@@ -5,11 +5,16 @@ export const login = ({ userName, password }) => {
     userName,
     password
   }
-  return axios.request({
+  /* return axios.request({
     url: 'login',
     data,
     method: 'post'
-  })
+  }) */
+  return Promise.resolve({
+    data: {
+      token: 'token'
+    }
+  });
 }
 
 export const getUserInfo = (token) => {
