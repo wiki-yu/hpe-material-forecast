@@ -1,5 +1,5 @@
 <template>
-  <div>test</div>
+  <div>The home page shows a comparison of the HPE result and iAI prediction using both table and chart</div>
 </template>
 
 <script>

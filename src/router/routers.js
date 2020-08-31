@@ -50,15 +50,15 @@ export default [
       }
     ]
   },
-  // {
-  //   path: '',
-  //   name: 'doc',
-  //   meta: {
-  //     title: 'Notes',
-  //     href: 'https://www.fii-usa.com/AI.html',
-  //     icon: 'ios-book'
-  //   }
-  // },
+  {
+    path: '',
+    name: 'doc',
+    meta: {
+      title: 'Notes',
+      href: 'https://www.fii-usa.com/AI.html',
+      icon: 'ios-book'
+    }
+  },
   // {
   //   path: '/join',
   //   name: 'join',

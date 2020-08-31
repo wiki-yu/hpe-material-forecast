@@ -5,7 +5,7 @@
       <Card>
         <p slot="title" class="card-title" >
           <Icon type="android-wifi"></Icon>
-          Material table
+          Material Table
         <div style="height: 50px">
         <Dropdown style="margin-left: 2px">
           <Button type="primary">
@@ -13,12 +13,12 @@
               <Icon type="ios-arrow-down"></Icon>
           </Button>
           <DropdownMenu slot="list">
-            <DropdownItem v-for="n in 2" :key="n" @click.native="handleClick(n)">{{getName(n)}}</DropdownItem>
+            <DropdownItem v-for="n in 6" :key="n" @click.native="handleClick(n)">{{getName(n)}}</DropdownItem>
           </DropdownMenu>
         </Dropdown>
         </div>
         </p>
-        <div style="height: 300px">
+        <div style="height: 200px">
           <!-- <Table stripe :columns="columns1" :data="data"></Table> -->
           <Table height="300" :columns="columns1" :data="data"></Table>
         </div>
@@ -28,7 +28,12 @@
 
     <Row>
       <Card shadow>
-        <example style="height: 310px;" :echartsData="data"  />
+        <p slot="title" class="card-title" >
+          <Icon type="android-wifi"></Icon>
+          Material Chart
+        </p>
+        <example style="height: 250px;" :echartsData="data"  />
+
       </Card>
     </Row>
   </div>
@@ -95,7 +100,7 @@ export default {
       ],
       data: [],
       data1: {
-        name: 'A',
+        name: '840759-091',
         data: [
           {
             date: '2020-07-20',
@@ -136,7 +141,7 @@ export default {
         ]
       },
       data2: {
-        name: 'B',
+        name: '870660-001',
         data: [
           {
             date: '2020-07-20',
@@ -176,175 +181,187 @@ export default {
           }
         ]
       },
-      // data3: [
-      //   {
-      //     date: '2020-07-20',
-      //     iai: 4,
-      //     hpe: 25,
-      //     qty: 7
-      //   },
-      //   {
-      //     date: '2020-07-27',
-      //     iai: 4,
-      //     hpe: 20,
-      //     qty: 0
-      //   },
-      //   {
-      //     date: '2020-08-03',
-      //     iai: 4,
-      //     hpe: 8,
-      //     qty: 2
-      //   },
-      //   {
-      //     date: '2020-08-10',
-      //     iai: 4,
-      //     hpe: 7,
-      //     qty: 8
-      //   },
-      //   {
-      //     date: '2020-08-17',
-      //     iai: 4,
-      //     hpe: 8,
-      //     qty: 6
-      //   },
-      //   {
-      //     date: '2020-08-24',
-      //     iai: 4,
-      //     hpe: 8,
-      //     qty: 4
-      //   }
-      // ],
-      // data4: [
-      //   {
-      //     date: '2020-07-20',
-      //     iai: 1,
-      //     hpe: 26,
-      //     qty: 0
-      //   },
-      //   {
-      //     date: '2020-07-27',
-      //     iai: 1,
-      //     hpe: 26,
-      //     qty: 0
-      //   },
-      //   {
-      //     date: '2020-08-03',
-      //     iai: 1,
-      //     hpe: 26,
-      //     qty: 0
-      //   },
-      //   {
-      //     date: '2020-08-10',
-      //     iai: 2,
-      //     hpe: 16,
-      //     qty: 0
-      //   },
-      //   {
-      //     date: '2020-08-17',
-      //     iai: 2,
-      //     hpe: 32,
-      //     qty: 0
-      //   },
-      //   {
-      //     date: '2020-08-24',
-      //     iai: 2,
-      //     hpe: 32,
-      //     qty: 0
-      //   }
-      // ],
-      // data5: [
-      //   {
-      //     date: '2020-07-20',
-      //     iai: 8,
-      //     hpe: 16,
-      //     qty: 8
-      //   },
-      //   {
-      //     date: '2020-07-27',
-      //     iai: 7,
-      //     hpe: 15,
-      //     qty: 2
-      //   },
-      //   {
-      //     date: '2020-08-03',
-      //     iai: 7,
-      //     hpe: 12,
-      //     qty: 16
-      //   },
-      //   {
-      //     date: '2020-08-10',
-      //     iai: 11,
-      //     hpe: 7,
-      //     qty: 16
-      //   },
-      //   {
-      //     date: '2020-08-17',
-      //     iai: 8,
-      //     hpe: 7,
-      //     qty: 8
-      //   },
-      //   {
-      //     date: '2020-08-24',
-      //     iai: 7,
-      //     hpe: 7,
-      //     qty: 7
-      //   }
-      // ],
-      // data6: [
-      //   {
-      //     date: '2020-07-20',
-      //     iai: 259,
-      //     hpe: 446,
-      //     qty: 206
-      //   },
-      //   {
-      //     date: '2020-07-27',
-      //     iai: 98,
-      //     hpe: 432,
-      //     qty: 92
-      //   },
-      //   {
-      //     date: '2020-08-03',
-      //     iai: 89,
-      //     hpe: 412,
-      //     qty: 70
-      //   },
-      //   {
-      //     date: '2020-08-10',
-      //     iai: 349,
-      //     hpe: 385,
-      //     qty: 40
-      //   },
-      //   {
-      //     date: '2020-08-17',
-      //     iai: 242,
-      //     hpe: 738,
-      //     qty: 42
-      //   },
-      //   {
-      //     date: '2020-08-24',
-      //     iai: 229,
-      //     hpe: 722,
-      //     qty: 123
-      //   }
-      // ]
+      data3: {
+        name: '877688-001',
+        data: [
+          {
+            date: '2020-07-20',
+            iai: 4,
+            hpe: 25,
+            qty: 7
+          },
+          {
+            date: '2020-07-27',
+            iai: 4,
+            hpe: 20,
+            qty: 0
+          },
+          {
+            date: '2020-08-03',
+            iai: 4,
+            hpe: 8,
+            qty: 2
+          },
+          {
+            date: '2020-08-10',
+            iai: 4,
+            hpe: 7,
+            qty: 8
+          },
+          {
+            date: '2020-08-17',
+            iai: 4,
+            hpe: 8,
+            qty: 6
+          },
+          {
+            date: '2020-08-24',
+            iai: 4,
+            hpe: 8,
+            qty: 4
+          }
+        ]
+      },
+      data4: {
+        name: 'C8S92-62001',
+        data: [
+          {
+            date: '2020-07-20',
+            iai: 1,
+            hpe: 26,
+            qty: 0
+          },
+          {
+            date: '2020-07-27',
+            iai: 1,
+            hpe: 26,
+            qty: 0
+          },
+          {
+            date: '2020-08-03',
+            iai: 1,
+            hpe: 26,
+            qty: 0
+          },
+          {
+            date: '2020-08-10',
+            iai: 2,
+            hpe: 16,
+            qty: 0
+          },
+          {
+            date: '2020-08-17',
+            iai: 2,
+            hpe: 32,
+            qty: 0
+          },
+          {
+            date: '2020-08-24',
+            iai: 2,
+            hpe: 32,
+            qty: 0
+          }
+        ]
+      },
+      data5: {
+        name: 'N9Z38AA',
+        data: [
+          {
+            date: '2020-07-20',
+            iai: 8,
+            hpe: 16,
+            qty: 8
+          },
+          {
+            date: '2020-07-27',
+            iai: 7,
+            hpe: 15,
+            qty: 2
+          },
+          {
+            date: '2020-08-03',
+            iai: 7,
+            hpe: 12,
+            qty: 16
+          },
+          {
+            date: '2020-08-10',
+            iai: 11,
+            hpe: 7,
+            qty: 16
+          },
+          {
+            date: '2020-08-17',
+            iai: 8,
+            hpe: 7,
+            qty: 8
+          },
+          {
+            date: '2020-08-24',
+            iai: 7,
+            hpe: 7,
+            qty: 7
+          }
+        ]
+      },
+      data6: {
+        name: 'P11908-001',
+        data: [
+          {
+            date: '2020-07-20',
+            iai: 259,
+            hpe: 446,
+            qty: 206
+          },
+          {
+            date: '2020-07-27',
+            iai: 98,
+            hpe: 432,
+            qty: 92
+          },
+          {
+            date: '2020-08-03',
+            iai: 89,
+            hpe: 412,
+            qty: 70
+          },
+          {
+            date: '2020-08-10',
+            iai: 349,
+            hpe: 385,
+            qty: 40
+          },
+          {
+            date: '2020-08-17',
+            iai: 242,
+            hpe: 738,
+            qty: 42
+          },
+          {
+            date: '2020-08-24',
+            iai: 229,
+            hpe: 722,
+            qty: 123
+          }
+        ]
+      }
     }
   },
   mounted () {
     this.data = this.data1.data
   },
   computed: {
-    curName() {
-      return this[`data${this.curIndex}`].name;
+    curName () {
+      return this[`data${this.curIndex}`].name
     }
   },
   methods: {
-    handleClick(index) {
+    handleClick (index) {
       this.curIndex = index
       this.data = this[`data${index}`].data
     },
-    getName(index) {
-      return this[`data${index}`].name;
+    getName (index) {
+      return this[`data${index}`].name
     }
   }
 }

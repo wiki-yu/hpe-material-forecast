@@ -20,7 +20,7 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # 部署到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:wiki-yu/hpe-material-forecast.git master:gh-pages
+git push -f git@github.com:wiki-yu/hpe-material-forecast111.git master:gh-pages
 # 以這個專案來講就要改成這樣以下這樣，下面是走 ssh 模式
 # git push -f git@github.com:hsiangfeng/HexfootMusic.git master:gh-pages
 # 除此之外，也可以改走 HTTPS 模式
