@@ -19,6 +19,11 @@ const turnTo = (to, access, next) => {
   else next({ replace: true, name: 'error_401' }) // 无权限，重定向到401页面
 }
 
+router.beforeEach((to, from, next) => {
+  console.log(to.name)
+  next();
+});
+
 // router.beforeEach((to, from, next) => {
 //   iView.LoadingBar.start()
 //   const token = getToken()
