@@ -65,7 +65,7 @@ export default {
               color: '#0C17A6'
             } },
             data: []
-          },
+          }
         ]
       }
     }
@@ -74,16 +74,16 @@ export default {
     resize () {
       this.dom.resize()
     },
-    updateChart() {
+    updateChart () {
       this.$nextTick(() => {
         this.dom = echarts.init(this.$refs.dom)
         this.dom.setOption(this.option)
         on(window, 'resize', this.resize)
       })
     },
-    mergeData(data, name) {
+    mergeData (data, name) {
       return data.map((item) => {
-        return item[name];
+        return item[name]
       })
     }
   },
@@ -93,19 +93,18 @@ export default {
       deep: true,
       handler (val) {
         this.option.xAxis[0].data = val.map((data) => {
-          return data.date;
-        });
-        for(let i = 0; i < this.dataName.length; i++) {
-          let name = this.dataName[i];
-          this.option.series[i].data = this.mergeData(val, name);
+          return data.date
+        })
+        for (let i = 0; i < this.dataName.length; i++) {
+          let name = this.dataName[i]
+          this.option.series[i].data = this.mergeData(val, name)
         }
-        this.updateChart();
+        this.updateChart()
       }
-    },
+    }
   },
   mounted () {
-
-    this.updateChart();
+    this.updateChart()
   },
   beforeDestroy () {
     off(window, 'resize', this.resize)

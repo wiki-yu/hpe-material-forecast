@@ -61,13 +61,12 @@ export default {
       this.$refs.loginForm.validate((valid) => {
         if (valid) {
           // if this.form.userName==''
-          if (this.form.password=='123456') {
+          if (this.form.password == '123456') {
             this.$emit('on-success-valid', {
               userName: this.form.userName,
               password: this.form.password
             })
-          }
-          else{
+          } else {
             this.$emit('on-failure')
           }
         }

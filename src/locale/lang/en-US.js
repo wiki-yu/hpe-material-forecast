@@ -15,7 +15,7 @@ export default {
   update_table_page: 'Update .CSV',
   update_paste_page: 'Paste Table Data',
   multilevel: 'multilevel',
-  directive_page: 'Directive',
+  directive_page: 'Directive123',
   level_1: 'Level-1',
   level_2: 'Level-2',
   level_2_1: 'Level-2-1',

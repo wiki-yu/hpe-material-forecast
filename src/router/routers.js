@@ -50,15 +50,15 @@ export default [
       }
     ]
   },
-  {
-    path: '',
-    name: 'doc',
-    meta: {
-      title: 'Notes',
-      href: 'https://www.fii-usa.com/AI.html',
-      icon: 'ios-book'
-    }
-  },
+  // {
+  //   path: '',
+  //   name: 'doc',
+  //   meta: {
+  //     title: 'Notes',
+  //     href: 'https://www.fii-usa.com/AI.html',
+  //     icon: 'ios-book'
+  //   }
+  // },
   // {
   //   path: '/join',
   //   name: 'join',
@@ -354,8 +354,8 @@ export default [
   //   ]
   // },
   {
-    path: '/directive',
-    name: 'directive',
+    path: '/directive123',
+    name: 'directive123',
     meta: {
       hideInBread: true
     },
