@@ -50,15 +50,15 @@ export default [
       }
     ]
   },
-  // {
-  //   path: '',
-  //   name: 'doc',
-  //   meta: {
-  //     title: '文档',
-  //     href: 'https://lison16.github.io/iview-admin-doc/#/',
-  //     icon: 'ios-book'
-  //   }
-  // },
+  {
+    path: '',
+    name: 'doc',
+    meta: {
+      title: 'Notes',
+      href: 'https://www.fii-usa.com/AI.html',
+      icon: 'ios-book'
+    }
+  },
   // {
   //   path: '/join',
   //   name: 'join',
@@ -374,7 +374,7 @@ export default [
   },
   {
     path: '/multilevel',
-    name: 'multilevel',
+    name: 'Other Charts',
     meta: {
       icon: 'md-menu',
       title: '多级菜单'
@@ -383,7 +383,7 @@ export default [
     children: [
       {
         path: 'level_2_1',
-        name: 'level_2_1',
+        name: 'Chart 1',
         meta: {
           icon: 'md-funnel',
           title: '二级-1'
@@ -392,7 +392,7 @@ export default [
       },
       {
         path: 'level_2_2',
-        name: 'level_2_2',
+        name: 'Chart 2',
         meta: {
           access: ['super_admin'],
           icon: 'md-funnel',
@@ -423,7 +423,7 @@ export default [
       },
       {
         path: 'level_2_3',
-        name: 'level_2_3',
+        name: 'Chart 3',
         meta: {
           icon: 'md-funnel',
           title: '二级-3'

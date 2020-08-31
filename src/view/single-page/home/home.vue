@@ -7,7 +7,7 @@
           <Icon type="android-wifi"></Icon>
           Material table
         <div style="height: 50px">
-        <Dropdown style="margin-left: 20px">
+        <Dropdown style="margin-left: 2px">
           <Button type="primary">
               Material
               <Icon type="ios-arrow-down"></Icon>
@@ -18,9 +18,9 @@
         </Dropdown>
         </div>
         </p>
-        <div style="height: 200px">
+        <div style="height: 300px">
           <!-- <Table stripe :columns="columns1" :data="data"></Table> -->
-          <Table height="200" :columns="columns1" :data="data"></Table>
+          <Table height="300" :columns="columns1" :data="data"></Table>
         </div>
       </Card>
       </Col>
@@ -95,6 +95,18 @@ export default {
       data: [],
       data1: [
         {  
+          date: '2020-07-20',
+          iai: 592,
+          hpe: 901,
+          qty: 572
+        },
+        {  
+          date: '2020-07-27',
+          iai: 881,
+          hpe: 1432,
+          qty: 310
+        },
+        {  
           date: '2020-08-03',
           iai: 866,
           hpe: 2771,
@@ -121,132 +133,192 @@ export default {
       ],
       data2: [
         {  
+          date: '2020-07-20',
+          iai: 15,
+          hpe: 58,
+          qty: 13
+        },
+        {  
+          date: '2020-07-27',
+          iai: 12,
+          hpe: 62,
+          qty: 35
+        },
+        {  
           date: '2020-08-03',
-          iai: 50,
-          hpe: 11,
-          qty: 12
+          iai: 12,
+          hpe: 78,
+          qty: 5
         },
         {  
           date: '2020-08-10',
-          iai: 10,
-          hpe: 11,
-          qty: 12
+          iai: 12,
+          hpe: 57,
+          qty: 21
         },
         {  
           date: '2020-08-17',
-          iai: 10,
-          hpe: 11,
-          qty: 12
+          iai: 13,
+          hpe: 31,
+          qty: 24
         },
         {  
           date: '2020-08-24',
-          iai: 10,
-          hpe: 11,
-          qty: 12
+          iai: 12,
+          hpe: 27,
+          qty: 10
         }
       ],
       data3: [
         {  
+          date: '2020-07-20',
+          iai: 4,
+          hpe: 25,
+          qty: 7
+        },
+        {  
+          date: '2020-07-27',
+          iai: 4,
+          hpe: 20,
+          qty: 0
+        },
+        {  
           date: '2020-08-03',
-          iai: 10,
-          hpe: 11,
-          qty: 120
+          iai: 4,
+          hpe: 8,
+          qty: 2
         },
         {  
           date: '2020-08-10',
-          iai: 10,
-          hpe: 11,
-          qty: 12
+          iai: 4,
+          hpe: 7,
+          qty: 8
         },
         {  
           date: '2020-08-17',
-          iai: 10,
-          hpe: 11,
-          qty: 12
+          iai: 4,
+          hpe: 8,
+          qty: 6
         },
         {  
           date: '2020-08-24',
-          iai: 10,
-          hpe: 11,
-          qty: 12
+          iai: 4,
+          hpe: 8,
+          qty: 4
         }
       ],
       data4: [
         {  
+          date: '2020-07-20',
+          iai: 1,
+          hpe: 26,
+          qty: 0
+        },
+        {  
+          date: '2020-07-27',
+          iai: 1,
+          hpe: 26,
+          qty: 0
+        },
+        {  
           date: '2020-08-03',
-          iai: 10,
-          hpe: 11,
-          qty: 12
+          iai: 1,
+          hpe: 26,
+          qty: 0
         },
         {  
           date: '2020-08-10',
-          iai: 10,
-          hpe: 101,
-          qty: 12
+          iai: 2,
+          hpe: 16,
+          qty: 0
         },
         {  
           date: '2020-08-17',
-          iai: 10,
-          hpe: 11,
-          qty: 12
+          iai: 2,
+          hpe: 32,
+          qty: 0
         },
         {  
           date: '2020-08-24',
-          iai: 10,
-          hpe: 11,
-          qty: 12
+          iai: 2,
+          hpe: 32,
+          qty: 0
         }
       ],
       data5: [
         {  
+          date: '2020-07-20',
+          iai: 8,
+          hpe: 16,
+          qty: 8
+        },
+        {  
+          date: '2020-07-27',
+          iai: 7,
+          hpe: 15,
+          qty: 2
+        },
+        {  
           date: '2020-08-03',
-          iai: 10,
-          hpe: 11,
-          qty: 102
+          iai: 7,
+          hpe: 12,
+          qty: 16
         },
         {  
           date: '2020-08-10',
-          iai: 10,
-          hpe: 11,
-          qty: 12
+          iai: 11,
+          hpe: 7,
+          qty: 16
         },
         {  
           date: '2020-08-17',
-          iai: 10,
-          hpe: 11,
-          qty: 12
+          iai: 8,
+          hpe: 7,
+          qty: 8
         },
         {  
           date: '2020-08-24',
-          iai: 10,
-          hpe: 11,
-          qty: 12
+          iai: 7,
+          hpe: 7,
+          qty: 7
         }
       ],
       data6: [
         {  
+          date: '2020-07-20',
+          iai: 259,
+          hpe: 446,
+          qty: 206
+        },
+        {  
+          date: '2020-07-27',
+          iai: 98,
+          hpe: 432,
+          qty: 92
+        },
+        {  
           date: '2020-08-03',
-          iai: 10,
-          hpe: 11,
-          qty: 12
+          iai: 89,
+          hpe: 412,
+          qty: 70
         },
         {  
           date: '2020-08-10',
-          iai: 10,
-          hpe: 11,
-          qty: 120
+          iai: 349,
+          hpe: 385,
+          qty: 40
         },
         {  
           date: '2020-08-17',
-          iai: 10,
-          hpe: 11,
-          qty: 12
+          iai: 242,
+          hpe: 738,
+          qty: 42
         },
         {  
           date: '2020-08-24',
-          iai: 10,
-          hpe: 11,
-          qty: 12
+          iai: 229,
+          hpe: 722,
+          qty: 123
         }
       ]
     }
