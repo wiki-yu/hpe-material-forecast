@@ -1,40 +1,50 @@
 <template>
   <div>
- <Row style="padding-top: 10px">
+
+    <Row style="padding-top: 10px">
       <Col span="24" style="padding-right: 5px" >
-      <Card>
-        <p slot="title" class="card-title" >
-          <Icon type="android-wifi"></Icon>
-          Material Table
-        <div style="height: 50px">
-        <Dropdown style="margin-left: 2px">
-          <Button type="primary">
-              {{curName}}
-              <Icon type="ios-arrow-down"></Icon>
-          </Button>
-          <DropdownMenu slot="list">
-            <DropdownItem v-for="n in 6" :key="n" @click.native="handleClick(n)">{{getName(n)}}</DropdownItem>
-          </DropdownMenu>
-        </Dropdown>
-        </div>
-        </p>
-        <div style="height: 200px">
-          <!-- <Table stripe :columns="columns1" :data="data"></Table> -->
-          <Table height="300" :columns="columns1" :data="data"></Table>
-        </div>
-      </Card>
+        <Card>
+          <p slot="title" class="card-title" >
+            <Icon type="android-wifi"></Icon>
+            Material Table
+            <div style="height: 50px">
+              <Dropdown style="margin-left: 2px">
+                <Button type="primary">
+                    {{curName}}
+                    <Icon type="ios-arrow-down"></Icon>
+                </Button>
+                <DropdownMenu slot="list">
+                  <DropdownItem v-for="n in 6" :key="n" @click.native="handleClick(n)">{{getName(n)}}</DropdownItem>
+                </DropdownMenu>
+              </Dropdown>
+            </div>
+          </p>
+          <div style="height: 150px">
+            <!-- <Table stripe :columns="columns1" :data="data"></Table> -->
+            <Table height="150" :columns="columns1" :data="data"></Table>
+          </div>
+        </Card>
       </Col>
     </Row>
 
-    <Row>
+    <Row style="padding-top: 10px">
       <Card shadow>
         <p slot="title" class="card-title" >
           <Icon type="android-wifi"></Icon>
           Material Chart
         </p>
-        <example style="height: 250px;" :echartsData="data"  />
-
+        <example style="height: 200px;" :echartsData="data"  />
       </Card>
+    </Row>
+
+    <Row style="padding-top: 10px">
+      <div>
+        <Card title="Export EXCEL">
+          <Row>
+          <Button icon="md-download" :loading="exportLoading" @click="exportExcel">Export File</Button>
+          </Row>
+        </Card>
+      </div>
     </Row>
   </div>
 </template>
@@ -44,6 +54,7 @@ import InforCard from '_c/info-card'
 import CountTo from '_c/count-to'
 import { ChartPie, ChartBar } from '_c/charts'
 import Example from './example.vue'
+import excel from '@/libs/excel'
 export default {
   name: 'home',
   components: {
@@ -53,48 +64,32 @@ export default {
     ChartBar,
     Example
   },
+  legend: {
+    data: ['邮件营销', '联盟广告', '视频广告', '直接访问'],
+    right: 0,
+    itemWidth: 18,
+    itemHeight: 7
+  },
   data () {
     return {
       curIndex: 1,
-      inforCardData: [
-        { title: '新增用户', icon: 'md-person-add', count: 803, color: '#2d8cf0' },
-        { title: '累计点击', icon: 'md-locate', count: 232, color: '#19be6b' },
-        { title: '新增问答', icon: 'md-help-circle', count: 142, color: '#ff9900' },
-        { title: '分享统计', icon: 'md-share', count: 657, color: '#ed3f14' },
-        { title: '新增互动', icon: 'md-chatbubbles', count: 12, color: '#E46CBB' },
-        { title: '新增页面', icon: 'md-map', count: 14, color: '#9A66E4' }
-      ],
-      pieData: [
-        { value: 335, name: '直接访问' },
-        { value: 310, name: '邮件营销' },
-        { value: 234, name: '联盟广告' },
-        { value: 135, name: '视频广告' },
-        { value: 1548, name: '搜索引擎' }
-      ],
-      barData: {
-        Mon: 13253,
-        Tue: 34235,
-        Wed: 26321,
-        Thu: 12340,
-        Fri: 24643,
-        Sat: 1322,
-        Sun: 1324
-      },
+      exportLoading: false,
+
       columns1: [
         {
           title: 'Date',
           key: 'date'
         },
         {
-          title: 'iAI',
+          title: 'iAI Prediction',
           key: 'iai'
         },
         {
-          title: 'HPE',
+          title: 'HPE Lead-Time Forecast',
           key: 'hpe'
         },
         {
-          title: 'QTY',
+          title: 'Actual Requirement QTY',
           key: 'qty'
         }
       ],
@@ -102,6 +97,48 @@ export default {
       data1: {
         name: '840759-091',
         data: [
+          {
+            date: '2020-06-01',
+            iai: 1524,
+            hpe: 1969,
+            qty: 180
+          },
+          {
+            date: '2020-06-08',
+            iai: 1283,
+            hpe: 1925,
+            qty: 434
+          },
+          {
+            date: '2020-06-15',
+            iai: 1327,
+            hpe: 1925,
+            qty: 2640
+          },
+          {
+            date: '2020-06-22',
+            iai: 1059,
+            hpe: 721,
+            qty: 436
+          },
+          {
+            date: '2020-06-29',
+            iai: 1011,
+            hpe: 1241,
+            qty: 488
+          },
+          {
+            date: '2020-07-06',
+            iai: 835,
+            hpe: 659,
+            qty: 976
+          },
+          {
+            date: '2020-07-13',
+            iai: 865,
+            hpe: 659,
+            qty: 370
+          },
           {
             date: '2020-07-20',
             iai: 592,
@@ -136,13 +173,61 @@ export default {
             date: '2020-08-24',
             iai: 787,
             hpe: 2180,
-            qty: 300
+            qty: 234
+          },
+          {
+            date: '2020-08-31',
+            iai: 443,
+            hpe: 688,
+            qty: NaN
           }
         ]
       },
       data2: {
         name: '870660-001',
         data: [
+          {
+            date: '2020-06-01',
+            iai: 6,
+            hpe: 30,
+            qty: 8
+          },
+          {
+            date: '2020-06-08',
+            iai: 6,
+            hpe: 30,
+            qty: 4
+          },
+          {
+            date: '2020-06-15',
+            iai: 6,
+            hpe: 46,
+            qty: 4
+          },
+          {
+            date: '2020-06-22',
+            iai: 15,
+            hpe: 55,
+            qty: 10
+          },
+          {
+            date: '2020-06-29',
+            iai: 11,
+            hpe: 59,
+            qty: 10
+          },
+          {
+            date: '2020-07-06',
+            iai: 10,
+            hpe: 40,
+            qty: 0
+          },
+          {
+            date: '2020-07-13',
+            iai: 13,
+            hpe: 50,
+            qty: 12
+          },
           {
             date: '2020-07-20',
             iai: 15,
@@ -177,13 +262,61 @@ export default {
             date: '2020-08-24',
             iai: 12,
             hpe: 27,
-            qty: 10
+            qty: 4
+          },
+          {
+            date: '2020-08-31',
+            iai: 11,
+            hpe: 25,
+            qty: NaN
           }
         ]
       },
       data3: {
         name: '877688-001',
         data: [
+          {
+            date: '2020-06-01',
+            iai: 8,
+            hpe: 49,
+            qty: 0
+          },
+          {
+            date: '2020-06-08',
+            iai: 8,
+            hpe: 21,
+            qty: 5
+          },
+          {
+            date: '2020-06-15',
+            iai: 8,
+            hpe: 21,
+            qty: 5
+          },
+          {
+            date: '2020-06-22',
+            iai: 8,
+            hpe: 22,
+            qty: 0
+          },
+          {
+            date: '2020-06-29',
+            iai: 4,
+            hpe: 15,
+            qty: 0
+          },
+          {
+            date: '2020-07-06',
+            iai: 4,
+            hpe: 26,
+            qty: 2
+          },
+          {
+            date: '2020-07-13',
+            iai: 4,
+            hpe: 26,
+            qty: 0
+          },
           {
             date: '2020-07-20',
             iai: 4,
@@ -218,13 +351,61 @@ export default {
             date: '2020-08-24',
             iai: 4,
             hpe: 8,
-            qty: 4
+            qty: 6
+          },
+          {
+            date: '2020-08-31',
+            iai: 4,
+            hpe: 4,
+            qty: NaN
           }
         ]
       },
       data4: {
         name: 'C8S92-62001',
         data: [
+          {
+            date: '2020-06-01',
+            iai: 3,
+            hpe: 29,
+            qty: 0
+          },
+          {
+            date: '2020-06-08',
+            iai: 2,
+            hpe: 26,
+            qty: 0
+          },
+          {
+            date: '2020-06-15',
+            iai: 2,
+            hpe: 26,
+            qty: 0
+          },
+          {
+            date: '2020-06-22',
+            iai: 1,
+            hpe: 24,
+            qty: 0
+          },
+          {
+            date: '2020-06-29',
+            iai: 1,
+            hpe: 23,
+            qty: 0
+          },
+          {
+            date: '2020-07-06',
+            iai: 1,
+            hpe: 26,
+            qty: 0
+          },
+          {
+            date: '2020-07-13',
+            iai: 1,
+            hpe: 26,
+            qty: 0
+          },
           {
             date: '2020-07-20',
             iai: 1,
@@ -260,12 +441,60 @@ export default {
             iai: 2,
             hpe: 32,
             qty: 0
+          },
+          {
+            date: '2020-08-31',
+            iai: 2,
+            hpe: 20,
+            qty: NaN
           }
         ]
       },
       data5: {
         name: 'N9Z38AA',
         data: [
+          {
+            date: '2020-06-01',
+            iai: 6,
+            hpe: 13,
+            qty: 14
+          },
+          {
+            date: '2020-06-08',
+            iai: 5,
+            hpe: 13,
+            qty: 18
+          },
+          {
+            date: '2020-06-15',
+            iai: 6,
+            hpe: 13,
+            qty: 10
+          },
+          {
+            date: '2020-06-22',
+            iai: 5,
+            hpe: 15,
+            qty: 20
+          },
+          {
+            date: '2020-06-29',
+            iai: 8,
+            hpe: 13,
+            qty: 0
+          },
+          {
+            date: '2020-07-06',
+            iai: 7,
+            hpe: 16,
+            qty: 4
+          },
+          {
+            date: '2020-07-13',
+            iai: 5,
+            hpe: 16,
+            qty: 18
+          },
           {
             date: '2020-07-20',
             iai: 8,
@@ -300,13 +529,61 @@ export default {
             date: '2020-08-24',
             iai: 7,
             hpe: 7,
-            qty: 7
+            qty: 208
+          },
+          {
+            date: '2020-08-31',
+            iai: 10,
+            hpe: 7,
+            qty: NaN
           }
         ]
       },
       data6: {
         name: 'P11908-001',
         data: [
+          {
+            date: '2020-06-01',
+            iai: 137,
+            hpe: 352,
+            qty: 96
+          },
+          {
+            date: '2020-06-08',
+            iai: 126,
+            hpe: 409,
+            qty: 161
+          },
+          {
+            date: '2020-06-15',
+            iai: 109,
+            hpe: 411,
+            qty: 220
+          },
+          {
+            date: '2020-06-22',
+            iai: 88,
+            hpe: 479,
+            qty: 130
+          },
+          {
+            date: '2020-06-29',
+            iai: 50,
+            hpe: 856,
+            qty: 168
+          },
+          {
+            date: '2020-07-06',
+            iai: 85,
+            hpe: 401,
+            qty: 42
+          },
+          {
+            date: '2020-07-13',
+            iai: 62,
+            hpe: 405,
+            qty: 36
+          },
           {
             date: '2020-07-20',
             iai: 259,
@@ -341,7 +618,13 @@ export default {
             date: '2020-08-24',
             iai: 229,
             hpe: 722,
-            qty: 123
+            qty: 106
+          },
+          {
+            date: '2020-08-31',
+            iai: 142,
+            hpe: 310,
+            qty: NaN
           }
         ]
       }
@@ -362,9 +645,31 @@ export default {
     },
     getName (index) {
       return this[`data${index}`].name
+    },
+    exportExcel () {
+    // this.data = this[`data${index}`].data
+      let exportData = []
+      for (let i = 1; i <= 6; i++) {
+        exportData.push(this[`data${i}`])
+      }
+      if (exportData.length) {
+        this.exportLoading = true
+        const params = {
+          title: ['Date', 'iAI prediction', 'HPE lead time prediction', 'Actual consumption'],
+          key: ['date', 'iai', 'hpe', 'qty'],
+          data: exportData,
+          autoWidth: true,
+          filename: 'Material prediction comparison'
+        }
+        excel.export_custom_to_excel(params)
+        this.exportLoading = false
+      } else {
+        this.$Message.info('Table cannot be empty')
+      }
     }
   }
 }
+
 </script>
 
 <style lang="less">

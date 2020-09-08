@@ -1,5 +1,9 @@
 <template>
-  <div>The home page shows a comparison of the HPE result and iAI prediction using both table and chart</div>
+  <div>
+    <p>1. The Home page table shows a comparison among the HPE result, iAI prediction and ground truth</p>
+    <p>2. The home page chart visualizes the comparison using the data from the table</p>
+    <p>3. The table can be downloaded using "EXPORT EXCEL</p>
+  </div>
 </template>
 
 <script>

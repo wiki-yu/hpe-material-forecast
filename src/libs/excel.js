@@ -93,6 +93,20 @@ export const export_array_to_excel = ({key, data, title, filename, autoWidth}) =
     XLSX.writeFile(wb, filename + '.xlsx');
 }
 
+export const export_custom_to_excel = ({key, data, title, filename, autoWidth}) => {
+    const wb = XLSX.utils.book_new();
+    data.forEach(item => {
+        const arr = json_to_array(key, item.data);
+        arr.unshift(title);
+        const ws = XLSX.utils.aoa_to_sheet(arr);
+        if (autoWidth) {
+            auto_width(ws, arr);
+        }
+        XLSX.utils.book_append_sheet(wb, ws, item.name);
+    })
+    XLSX.writeFile(wb, filename + '.xlsx');
+}
+
 export const read = (data, type) => {
     /* if type == 'base64' must fix data first */
     // const fixedData = fixdata(data)
@@ -109,5 +123,6 @@ export default {
   export_table_to_excel,
   export_array_to_excel,
   export_json_to_excel,
+  export_custom_to_excel,
   read
 }

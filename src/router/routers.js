@@ -50,15 +50,15 @@ export default [
       }
     ]
   },
-  {
-    path: '',
-    name: 'doc',
-    meta: {
-      title: 'Notes',
-      href: 'https://www.fii-usa.com/AI.html',
-      icon: 'ios-book'
-    }
-  },
+  // {
+  //   path: '',
+  //   name: 'doc',
+  //   meta: {
+  //     title: 'Notes',
+  //     href: 'https://www.fii-usa.com/AI.html',
+  //     icon: 'ios-book'
+  //   }
+  // },
   // {
   //   path: '/join',
   //   name: 'join',
@@ -423,7 +423,7 @@ export default [
       },
       {
         path: 'level_2_3',
-        name: 'Chart 3',
+        name: 'Chart 2',
         meta: {
           icon: 'md-funnel',
           title: '二级-3'
