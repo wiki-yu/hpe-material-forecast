@@ -68,7 +68,7 @@ export default {
             })
           } else {
             this.$emit('on-failure')
-            this.errors.push("Something went wrong, please refresh and try again.");
+            this.errors.push('Something went wrong, please refresh and try again.')
           }
         }
       })

@@ -179,6 +179,12 @@ export default {
             date: '2020-08-31',
             iai: 443,
             hpe: 688,
+            qty: 148
+          },
+          {
+            date: '2020-09-07',
+            iai: 370,
+            hpe: 635,
             qty: NaN
           }
         ]
@@ -268,6 +274,12 @@ export default {
             date: '2020-08-31',
             iai: 11,
             hpe: 25,
+            qty: 73
+          }, 
+          {
+            date: '2020-09-07',
+            iai: 11,
+            hpe: 33,
             qty: NaN
           }
         ]
@@ -357,6 +369,12 @@ export default {
             date: '2020-08-31',
             iai: 4,
             hpe: 4,
+            qty: 0
+          },
+          {
+            date: '2020-09-07',
+            iai: 90,
+            hpe: 7,
             qty: NaN
           }
         ]
@@ -444,6 +462,12 @@ export default {
           },
           {
             date: '2020-08-31',
+            iai: 2,
+            hpe: 20,
+            qty: 0
+          },
+          {
+            date: '2020-09-07',
             iai: 2,
             hpe: 20,
             qty: NaN
@@ -535,6 +559,12 @@ export default {
             date: '2020-08-31',
             iai: 10,
             hpe: 7,
+            qty: 38
+          },
+          {
+            date: '2020-09-07',
+            iai: 9,
+            hpe: 7,
             qty: NaN
           }
         ]
@@ -624,6 +654,12 @@ export default {
             date: '2020-08-31',
             iai: 142,
             hpe: 310,
+            qty: 64
+          },
+          {
+            date: '2020-09-07',
+            iai: 142,
+            hpe: 429,
             qty: NaN
           }
         ]

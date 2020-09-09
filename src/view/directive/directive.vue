@@ -1,8 +1,8 @@
 <template>
   <div>
     <p>1. The Home page table shows a comparison among the HPE result, iAI prediction and ground truth</p>
-    <p>2. The home page chart visualizes the comparison using the data from the table</p>
-    <p>3. The table can be downloaded using "EXPORT EXCEL</p>
+    <p>2. The home page chart visualizes the comparison using the data from the table, put the mouse on the graph and it will show the detailed info</p>
+    <p>3. The table can be downloaded using "EXPORT EXCEL", there are multi-sheets present different materials</p>
   </div>
 </template>
 
