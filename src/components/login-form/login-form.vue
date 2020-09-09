@@ -43,7 +43,7 @@ export default {
   data () {
     return {
       form: {
-        userName: 'super_admin',
+        userName: 'FMX_Juarez',
         password: ''
       }
     }
@@ -61,13 +61,14 @@ export default {
       this.$refs.loginForm.validate((valid) => {
         if (valid) {
           // if this.form.userName==''
-          if (this.form.password == '123456') {
+          if (this.form.password == 'fmxhpe') {
             this.$emit('on-success-valid', {
               userName: this.form.userName,
               password: this.form.password
             })
           } else {
             this.$emit('on-failure')
+            this.errors.push("Something went wrong, please refresh and try again.");
           }
         }
       })
