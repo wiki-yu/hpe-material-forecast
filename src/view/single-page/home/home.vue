@@ -64,12 +64,6 @@ export default {
     ChartBar,
     Example
   },
-  legend: {
-    data: ['邮件营销', '联盟广告', '视频广告', '直接访问'],
-    right: 0,
-    itemWidth: 18,
-    itemHeight: 7
-  },
   data () {
     return {
       curIndex: 1,
@@ -77,7 +71,7 @@ export default {
 
       columns1: [
         {
-          title: 'Date',
+          title: 'Week (starting on)',
           key: 'date'
         },
         {
@@ -185,6 +179,12 @@ export default {
             date: '2020-09-07',
             iai: 370,
             hpe: 635,
+            qty: 148
+          },
+          {
+            date: '2020-09-14',
+            iai: 733,
+            hpe: 626,
             qty: NaN
           }
         ]
@@ -275,11 +275,17 @@ export default {
             iai: 11,
             hpe: 25,
             qty: 73
-          }, 
+          },
           {
             date: '2020-09-07',
             iai: 11,
             hpe: 33,
+            qty: 4
+          },
+          {
+            date: '2020-09-14',
+            iai: 15,
+            hpe: 29,
             qty: NaN
           }
         ]
@@ -375,6 +381,12 @@ export default {
             date: '2020-09-07',
             iai: 90,
             hpe: 7,
+            qty: 0
+          },
+          {
+            date: '2020-09-14',
+            iai: 11,
+            hpe: 8,
             qty: NaN
           }
         ]
@@ -470,6 +482,12 @@ export default {
             date: '2020-09-07',
             iai: 2,
             hpe: 20,
+            qty: 0
+          },
+          {
+            date: '2020-09-14',
+            iai: 1,
+            hpe: 16,
             qty: NaN
           }
         ]
@@ -564,6 +582,12 @@ export default {
           {
             date: '2020-09-07',
             iai: 9,
+            hpe: 7,
+            qty: 4
+          },
+          {
+            date: '2020-09-14',
+            iai: 7,
             hpe: 7,
             qty: NaN
           }
@@ -660,6 +684,12 @@ export default {
             date: '2020-09-07',
             iai: 142,
             hpe: 429,
+            qty: 30
+          },
+          {
+            date: '2020-09-14',
+            iai: 190,
+            hpe: 288,
             qty: NaN
           }
         ]

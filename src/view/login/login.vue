@@ -8,7 +8,7 @@
       <Card icon="log-in" title="Login" :bordered="false">
         <div class="form-con">
           <login-form @on-success-valid="handleSubmit"></login-form>
-          <p class="login-tip">Please use any user name and pwd so far</p>
+          <p class="login-tip">Please provide password for authentication</p>
         </div>
       </Card>
     </div>
