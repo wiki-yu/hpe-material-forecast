@@ -22,6 +22,9 @@ export default {
             }
           }
         },
+        legend: {
+
+        },
         grid: {
           top: '3%',
           left: '1.2%',
@@ -45,9 +48,9 @@ export default {
           {
             name: 'iAI',
             type: 'line',
-            areaStyle: { normal: {
-              color: '#2d8cf0'
-            } },
+            // areaStyle: { normal: {
+            //   color: '#2d8cf0'
+            // } },
             data: []
           },
           {
