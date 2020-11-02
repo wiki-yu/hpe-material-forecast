@@ -500,13 +500,13 @@ export default {
           {
             date: '2020-10-19',
             iai: 11,
-            hpe: 1,
+            hpe: 9,
             qty: 0
           },
           {
             date: '2020-10-26',
             iai: 11,
-            hpe: 3,
+            hpe: 9,
             qty: 0
           },
           {
