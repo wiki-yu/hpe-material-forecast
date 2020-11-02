@@ -43,7 +43,7 @@ export default {
   data () {
     return {
       form: {
-        userName: 'test',
+        userName: 'FMX_Juarez',
         password: ''
       }
     }
@@ -61,8 +61,7 @@ export default {
       this.$refs.loginForm.validate((valid) => {
         if (valid) {
           // if this.form.userName==''
-          // if (this.form.password == 'fmxhpe') {
-          if(1) {
+          if (this.form.password == 'fmxhpe') {
             this.$emit('on-success-valid', {
               userName: this.form.userName,
               password: this.form.password

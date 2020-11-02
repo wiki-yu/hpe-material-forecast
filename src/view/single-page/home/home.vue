@@ -14,7 +14,7 @@
                     <Icon type="ios-arrow-down"></Icon>
                 </Button>
                 <DropdownMenu slot="list">
-                  <DropdownItem v-for="n in 6" :key="n" @click.native="handleClick(n)">{{getName(n)}}</DropdownItem>
+                  <DropdownItem v-for="n in 5" :key="n" @click.native="handleClick(n)">{{getName(n)}}</DropdownItem>
                 </DropdownMenu>
               </Dropdown>
             </div>
@@ -221,9 +221,14 @@ export default {
             date: '2020-10-26',
             iai: 618,
             hpe: 845,
+            qty: 217
+          },
+          {
+            date: '2020-11-02',
+            iai: 502,
+            hpe: 363,
             qty: NaN
           }
-        
         ]
       },
       data2: {
@@ -359,6 +364,12 @@ export default {
             date: '2020-10-26',
             iai: 19,
             hpe: 138,
+            qty: 2
+          },
+          {
+            date: '2020-11-02',
+            iai: 18,
+            hpe: 21,
             qty: NaN
           }
         ]
@@ -496,148 +507,17 @@ export default {
             date: '2020-10-26',
             iai: 11,
             hpe: 3,
+            qty: 0
+          },
+          {
+            date: '2020-11-02',
+            iai: 11,
+            hpe: 2,
             qty: NaN
           }
         ]
       },
       data4: {
-        name: 'C8S92-62001',
-        data: [
-          {
-            date: '2020-06-01',
-            iai: 3,
-            hpe: 29,
-            qty: 0
-          },
-          {
-            date: '2020-06-08',
-            iai: 2,
-            hpe: 26,
-            qty: 0
-          },
-          {
-            date: '2020-06-15',
-            iai: 2,
-            hpe: 26,
-            qty: 0
-          },
-          {
-            date: '2020-06-22',
-            iai: 1,
-            hpe: 24,
-            qty: 0
-          },
-          {
-            date: '2020-06-29',
-            iai: 1,
-            hpe: 23,
-            qty: 0
-          },
-          {
-            date: '2020-07-06',
-            iai: 1,
-            hpe: 26,
-            qty: 0
-          },
-          {
-            date: '2020-07-13',
-            iai: 1,
-            hpe: 26,
-            qty: 0
-          },
-          {
-            date: '2020-07-20',
-            iai: 1,
-            hpe: 26,
-            qty: 0
-          },
-          {
-            date: '2020-07-27',
-            iai: 1,
-            hpe: 26,
-            qty: 0
-          },
-          {
-            date: '2020-08-03',
-            iai: 1,
-            hpe: 26,
-            qty: 0
-          },
-          {
-            date: '2020-08-10',
-            iai: 2,
-            hpe: 16,
-            qty: 0
-          },
-          {
-            date: '2020-08-17',
-            iai: 2,
-            hpe: 32,
-            qty: 0
-          },
-          {
-            date: '2020-08-24',
-            iai: 2,
-            hpe: 32,
-            qty: 0
-          },
-          {
-            date: '2020-08-31',
-            iai: 2,
-            hpe: 20,
-            qty: 0
-          },
-          {
-            date: '2020-09-07',
-            iai: 2,
-            hpe: 20,
-            qty: 0
-          },
-          {
-            date: '2020-09-14',
-            iai: 1,
-            hpe: 16,
-            qty: 0
-          },
-          {
-            date: '2020-09-21',
-            iai: 3,
-            hpe: 17,
-            qty: 0
-          },
-          {
-            date: '2020-09-28',
-            iai: 4,
-            hpe: 20,
-            qty: 0
-          },
-          {
-            date: '2020-10-05',
-            iai: 14,
-            hpe: 15,
-            qty: 0
-          },
-          {
-            date: '2020-10-12',
-            iai: 38,
-            hpe: 15,
-            qty: 0
-          },
-          {
-            date: '2020-10-19',
-            iai: 23,
-            hpe: 12,
-            qty: 0
-          },
-          {
-            date: '2020-10-26',
-            iai: 26,
-            hpe: 13,
-            qty: NaN
-          }
-        ]
-      },
-      data5: {
         name: 'N9Z38AA',
         data: [
           {
@@ -770,11 +650,17 @@ export default {
             date: '2020-10-26',
             iai: 22,
             hpe: 7,
+            qty: 32
+          },
+          {
+            date: '2020-11-02',
+            iai: 10,
+            hpe: 7,
             qty: NaN
           }
         ]
       },
-      data6: {
+      data5: {
         name: 'P11908-001',
         data: [
           {
@@ -907,6 +793,12 @@ export default {
             date: '2020-10-26',
             iai: 59,
             hpe: 205,
+            qty: 70
+          },
+          {
+            date: '2020-11-02',
+            iai: 42,
+            hpe: 104,
             qty: NaN
           }
         ]
