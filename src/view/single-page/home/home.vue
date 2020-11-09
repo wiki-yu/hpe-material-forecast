@@ -854,7 +854,7 @@ export default {
     exportExcel () {
     // this.data = this[`data${index}`].data
       let exportData = []
-      for (let i = 1; i <= 6; i++) {
+      for (let i = 1; i <= 5; i++) {
         exportData.push(this[`data${i}`])
       }
       if (exportData.length) {
