@@ -227,6 +227,12 @@ export default {
             date: '2020-11-02',
             iai: 502,
             hpe: 363,
+            qty: 144,
+          },
+          {
+            date: '2020-11-09',
+            iai: 270,
+            hpe: 405,
             qty: NaN
           }
         ]
@@ -370,6 +376,12 @@ export default {
             date: '2020-11-02',
             iai: 18,
             hpe: 21,
+            qty: 12
+          },
+          {
+            date: '2020-11-09',
+            iai: 19,
+            hpe: 21,
             qty: NaN
           }
         ]
@@ -512,7 +524,13 @@ export default {
           {
             date: '2020-11-02',
             iai: 11,
-            hpe: 2,
+            hpe: 3,
+            qty: 1
+          },
+          {
+            date: '2020-11-09',
+            iai: 11,
+            hpe: 4,
             qty: NaN
           }
         ]
@@ -656,6 +674,12 @@ export default {
             date: '2020-11-02',
             iai: 10,
             hpe: 7,
+            qty: 42
+          },
+          {
+            date: '2020-11-09',
+            iai: 34,
+            hpe: 11,
             qty: NaN
           }
         ]
@@ -799,6 +823,12 @@ export default {
             date: '2020-11-02',
             iai: 42,
             hpe: 104,
+            qty: 66
+          },
+          {
+            date: '2020-11-09',
+            iai: 39,
+            hpe: 116,
             qty: NaN
           }
         ]
