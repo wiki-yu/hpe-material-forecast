@@ -62,11 +62,13 @@ export default {
         if (valid) {
           // if this.form.userName==''
           if (this.form.password == 'fmxhpe') {
+            this.$Message.success('Login Sucessfully!')
             this.$emit('on-success-valid', {
               userName: this.form.userName,
               password: this.form.password
             })
           } else {
+            this.$Message.success('Password incorrect!')
             this.$emit('on-failure')
             this.errors.push('Something went wrong, please refresh and try again.')
           }
