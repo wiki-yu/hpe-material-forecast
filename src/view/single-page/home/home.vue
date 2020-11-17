@@ -19,9 +19,9 @@
               </Dropdown>
             </div>
           </p>
-          <div style="height: 150px">
+          <div style="height: 200px">
             <!-- <Table stripe :columns="columns1" :data="data"></Table> -->
-            <Table height="150" :columns="columns1" :data="data"></Table>
+            <Table height="200" :columns="columns1" :data="data"></Table>
           </div>
         </Card>
       </Col>
