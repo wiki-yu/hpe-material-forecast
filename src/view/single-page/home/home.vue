@@ -233,8 +233,50 @@ export default {
             date: '2020-11-09',
             iai: 270,
             hpe: 405,
+            qty: 372,
+          },
+          {
+            date: '2020-11-16',
+            iai: 435,
+            hpe: 405,
             qty: NaN
-          }
+          },
+          {
+            date: '2020-11-23',
+            iai: 402,
+            hpe: 400,
+            qty: NaN
+          },
+          {
+            date: '2020-11-30',
+            iai: 138,
+            hpe: 179,
+            qty: NaN
+          },
+          {
+            date: '2020-12-07',
+            iai: 164,
+            hpe: 126,
+            qty: NaN
+          },
+          {
+            date: '2020-12-14',
+            iai: 193,
+            hpe: 162,
+            qty: NaN
+          },
+          {
+            date: '2020-12-21',
+            iai: 246,
+            hpe: 728,
+            qty: NaN
+          },
+          {
+            date: '2020-12-28',
+            iai: 216,
+            hpe: 464,
+            qty: NaN
+          },
         ]
       },
       data2: {
@@ -382,8 +424,50 @@ export default {
             date: '2020-11-09',
             iai: 19,
             hpe: 21,
+            qty: 0
+          },
+          {
+            date: '2020-11-16',
+            iai: 22,
+            hpe: 22,
             qty: NaN
-          }
+          },
+          {
+            date: '2020-11-23',
+            iai: 22,
+            hpe: 14,
+            qty: NaN
+          },
+          {
+            date: '2020-11-30',
+            iai: 18,
+            hpe: 14,
+            qty: NaN
+          },
+          {
+            date: '2020-12-07',
+            iai: 18,
+            hpe: 14,
+            qty: NaN
+          },
+          {
+            date: '2020-12-14',
+            iai: 21,
+            hpe: 14,
+            qty: NaN
+          },
+          {
+            date: '2020-12-21',
+            iai: 22,
+            hpe: 14,
+            qty: NaN
+          },
+          {
+            date: '2020-12-28',
+            iai: 15,
+            hpe: 11,
+            qty: NaN
+          },
         ]
       },
       data3: {
@@ -531,8 +615,50 @@ export default {
             date: '2020-11-09',
             iai: 11,
             hpe: 4,
+            qty: 0
+          },
+          {
+            date: '2020-11-16',
+            iai: 11,
+            hpe: 2,
             qty: NaN
-          }
+          },
+          {
+            date: '2020-11-23',
+            iai: 11,
+            hpe: 2,
+            qty: NaN
+          },
+          {
+            date: '2020-11-30',
+            iai: 11,
+            hpe: 2,
+            qty: NaN
+          },
+          {
+            date: '2020-12-07',
+            iai: 9,
+            hpe: 0,
+            qty: NaN
+          },
+          {
+            date: '2020-12-14',
+            iai: 3,
+            hpe: 0,
+            qty: NaN
+          },
+          {
+            date: '2020-12-21',
+            iai: 3,
+            hpe: 0,
+            qty: NaN
+          },
+          {
+            date: '2020-12-28',
+            iai: 4,
+            hpe: 2,
+            qty: NaN
+          },
         ]
       },
       data4: {
@@ -680,8 +806,50 @@ export default {
             date: '2020-11-09',
             iai: 34,
             hpe: 11,
+            qty: 30
+          },
+          {
+            date: '2020-11-16',
+            iai: 14,
+            hpe: 6,
             qty: NaN
-          }
+          },
+          {
+            date: '2020-11-23',
+            iai: 8,
+            hpe: 6,
+            qty: NaN
+          },
+          {
+            date: '2020-11-30',
+            iai: 40,
+            hpe: 8,
+            qty: NaN
+          },
+          {
+            date: '2020-12-07',
+            iai: 19,
+            hpe: 9,
+            qty: NaN
+          },
+          {
+            date: '2020-12-14',
+            iai: 13,
+            hpe: 11,
+            qty: NaN
+          },
+          {
+            date: '2020-12-21',
+            iai: 10,
+            hpe: 23,
+            qty: NaN
+          },
+          {
+            date: '2020-12-28',
+            iai: 27,
+            hpe: 23,
+            qty: NaN
+          },
         ]
       },
       data5: {
@@ -829,8 +997,50 @@ export default {
             date: '2020-11-09',
             iai: 39,
             hpe: 116,
+            qty: 53
+          },
+          {
+            date: '2020-11-16',
+            iai: 38,
+            hpe: 108,
             qty: NaN
-          }
+          },
+          {
+            date: '2020-11-23',
+            iai: 36,
+            hpe: 116,
+            qty: NaN
+          },
+          {
+            date: '2020-11-30',
+            iai: 35,
+            hpe: 154,
+            qty: NaN
+          },
+          {
+            date: '2020-12-07',
+            iai: 63,
+            hpe: 138,
+            qty: NaN
+          },
+          {
+            date: '2020-12-14',
+            iai: 61,
+            hpe: 143,
+            qty: NaN
+          },
+          {
+            date: '2020-12-21',
+            iai: 32,
+            hpe: 141,
+            qty: NaN
+          },
+          {
+            date: '2020-12-28',
+            iai: 40,
+            hpe: 249,
+            qty: NaN
+          },
         ]
       }
     }
