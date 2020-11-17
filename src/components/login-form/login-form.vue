@@ -68,7 +68,7 @@ export default {
               password: this.form.password
             })
           } else {
-            this.$Message.success('Password incorrect!')
+            this.$Message.error('Password incorrect!')
             this.$emit('on-failure')
             this.errors.push('Something went wrong, please refresh and try again.')
           }
