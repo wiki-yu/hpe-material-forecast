@@ -1242,13 +1242,13 @@ export default {
           {
             date: '2021-02-08',
             iai: 44,
-            hpe: NaN,
+            hpe: 0,
             qty: NaN
           },
           {
             date: '2021-02-15',
             iai: 45,
-            hpe: NaN,
+            hpe: 0,
             qty: NaN
           }
         ]
