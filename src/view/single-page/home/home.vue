@@ -287,7 +287,7 @@ export default {
             date: '2021-01-11',
             iai: 324,
             hpe: 100,
-            qty: NaN
+            qty: 108
           },
           {
             date: '2021-01-18',
@@ -323,6 +323,12 @@ export default {
             date: '2021-02-22',
             iai: 640,
             hpe: 133,
+            qty: NaN
+          },
+          {
+            date: '2021-03-01',
+            iai: 378,
+            hpe: 1750,
             qty: NaN
           }
         ]
@@ -526,7 +532,7 @@ export default {
             date: '2021-01-11',
             iai: 9,
             hpe: 11,
-            qty: NaN
+            qty: 0
           },
           {
             date: '2021-01-18',
@@ -562,6 +568,12 @@ export default {
             date: '2021-02-22',
             iai: 4,
             hpe: 12,
+            qty: NaN
+          },
+          {
+            date: '2021-03-01',
+            iai: 4,
+            hpe: 11,
             qty: NaN
           }
         ]
@@ -765,7 +777,7 @@ export default {
             date: '2021-01-11',
             iai: 3,
             hpe: 3,
-            qty: NaN
+            qty: 4
           },
           {
             date: '2021-01-18',
@@ -801,6 +813,12 @@ export default {
             date: '2021-02-22',
             iai: 3,
             hpe: 6,
+            qty: NaN
+          },
+          {
+            date: '2021-03-01',
+            iai: 3,
+            hpe: 4,
             qty: NaN
           }
         ]
@@ -1004,7 +1022,7 @@ export default {
             date: '2021-01-11',
             iai: 5,
             hpe: 14,
-            qty: NaN
+            qty: 24
           },
           {
             date: '2021-01-18',
@@ -1040,6 +1058,12 @@ export default {
             date: '2021-02-22',
             iai: 6,
             hpe: 22,
+            qty: NaN
+          },
+          {
+            date: '2021-03-01',
+            iai: 6,
+            hpe: 25,
             qty: NaN
           }
         ]
@@ -1243,7 +1267,7 @@ export default {
             date: '2021-01-11',
             iai: 14,
             hpe: 129,
-            qty: NaN
+            qty: 56
           },
           {
             date: '2021-01-18',
@@ -1279,6 +1303,12 @@ export default {
             date: '2021-02-22',
             iai: 59,
             hpe: 187,
+            qty: NaN
+          },
+          {
+            date: '2021-03-01',
+            iai: 59,
+            hpe: 142,
             qty: NaN
           }
         ]
