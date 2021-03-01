@@ -323,7 +323,7 @@ export default {
             date: '2021-02-22',
             iai: 640,
             hpe: 133,
-            qty: NaN
+            qty: 12
           },
           {
             date: '2021-03-01',
@@ -359,6 +359,12 @@ export default {
             date: '2021-04-05',
             iai: 115,
             hpe: 77,
+            qty: NaN
+          },
+          {
+            date: '2021-04-12',
+            iai: 125,
+            hpe: 54,
             qty: NaN
           }
         ]
@@ -635,6 +641,12 @@ export default {
             iai: 4,
             hpe: 11,
             qty: NaN
+          },
+          {
+            date: '2021-04-12',
+            iai: 4,
+            hpe: 9,
+            qty: NaN
           }
         ]
       },
@@ -873,7 +885,7 @@ export default {
             date: '2021-02-22',
             iai: 3,
             hpe: 6,
-            qty: NaN
+            qty: 0
           },
           {
             date: '2021-03-01',
@@ -908,6 +920,12 @@ export default {
           {
             date: '2021-04-05',
             iai: 4,
+            hpe: 1,
+            qty: NaN
+          },
+          {
+            date: '2021-04-12',
+            iai: 3,
             hpe: 1,
             qty: NaN
           }
@@ -1148,7 +1166,7 @@ export default {
             date: '2021-02-22',
             iai: 6,
             hpe: 22,
-            qty: NaN
+            qty: 22
           },
           {
             date: '2021-03-01',
@@ -1183,6 +1201,12 @@ export default {
           {
             date: '2021-04-05',
             iai: 6,
+            hpe: 30,
+            qty: NaN
+          },
+          {
+            date: '2021-04-12',
+            iai: 5,
             hpe: 30,
             qty: NaN
           }
@@ -1423,7 +1447,7 @@ export default {
             date: '2021-02-22',
             iai: 59,
             hpe: 187,
-            qty: NaN
+            qty: 30
           },
           {
             date: '2021-03-01',
@@ -1459,6 +1483,12 @@ export default {
             date: '2021-04-05',
             iai: 45,
             hpe: 111,
+            qty: NaN
+          },
+          {
+            date: '2021-04-12',
+            iai: 45,
+            hpe: 116,
             qty: NaN
           }
         ]
