@@ -44,7 +44,8 @@ The webapp is deployed on github pages: https://wiki-yu.github.io/hpe-material-f
 Username: FMX_Juarez  
 Password: fmxhpe  
 
-![HPE FMX material forecast comparison](https://github.com/wiki-yu/hpe-material-forecast/blob/master/HPE.jpg?raw=true)
+![HPE FMX material forecast comparison](/src/assets/images/HPE.png)
+
 
 
 
