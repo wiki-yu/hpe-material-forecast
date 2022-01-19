@@ -7,9 +7,8 @@ FMX HPE material forecast
 
 ## Description
 <p>
-This webapp is for displaying the forecast comparison between my prediction VS HPE prediction for the FMX factory located in Texas. 
-This data is written on the homepage for display, so it does not have the backend part with the database, the time series prediction code is also not included here, the major purpose 
-is for making a visualization comparison of the two different forecast result (also compared with the ground truth)   
+This webapp is for displaying the forecast comparison between my prediction VS HPE prediction for the FMX factory located in Texas.   
+This data is written on the homepage for display, so it does not have the backend part with the database, the time series prediction code is also not included here, the major purpose is for making a visualization comparison of the two different forecast result (also compared with the ground truth)     
 </p>
 
 
@@ -40,11 +39,13 @@ npm run dev
 npm run build 
 ```
 
-The webapp is deployed on github pages: https://wiki-yu.github.io/hpe-material-forecast/#/login
-username: FMX_Juarez
-password: fmxhpe
+## Deployment
+The webapp is deployed on github pages: https://wiki-yu.github.io/hpe-material-forecast/#/login  
+Username: FMX_Juarez  
+Password: fmxhpe  
 
-![HPE FMX material forecast comparison!](/src/assets/images/HPE.jpg)
+![HPE FMX material forecast comparison](https://github.com/wiki-yu/hpe-material-forecast/blob/master/HPE.jpg?raw=true)
+
 
 
 
